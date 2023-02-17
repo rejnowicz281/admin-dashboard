@@ -205,3 +205,16 @@ main {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.trending-container {
+    gap: 10px;
+}
+
+.trending article {
+    display: flex;
+    gap: 20px;
+}
+
+.trending svg {
+    width: 45px;
+}
