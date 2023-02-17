@@ -136,7 +136,7 @@ main {
     gap: 40px;
 }
 
-main article {
+.fancy-box {
     background-color: whitesmoke;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 10px;
@@ -151,11 +151,6 @@ main article {
     gap: 10px;
 }
 
-.announcements article,
-.trending article,
-.projects .container {
-    flex: 1;
-}
 
 .projects-container {
     display: grid;
@@ -175,7 +170,7 @@ main article {
     gap: 30px;
 }
 
-.project-info p {
+.text-muted {
     color: rgb(163, 158, 158);
 }
 
@@ -189,4 +184,24 @@ main article {
     width: 30px;
     margin: 5px;
     fill: rgb(54, 54, 54);
+}
+
+.announcements-container,
+.trending-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.announcements-container article {
+    border-bottom: 1px solid rgb(196, 190, 190);
+    margin: 5px;
+    flex: 1;
+}
+
+.announcements-container article p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
